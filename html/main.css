@@ -4,7 +4,7 @@
 
 /* background image (body) */
 body {
-    background-image: url('/graphics/background.svg');
+    background-image: url('/graphics/background.png');
     background-size: cover;
     background-position: bottom;
 }
@@ -89,7 +89,7 @@ a:link {
 
 /* Holds the BG image */
 .bg-img {
-    background-image: url('/graphics/greenbanner.png');
+    background-image: url('/graphics/banner.png');
     min-height: 150px;
     background-position: left;
     background-repeat: no-repeat;
