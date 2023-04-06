@@ -20,13 +20,13 @@ body {
 
 /* Create four equal columns that sits next to each other */
 .column {
-    flex: 33%;
-    max-width: 32%;
+    flex: 24%;
+    max-width: 23%;
     padding: 0 0px;
     }
 
 .column img {
-    margin-top: 8px;
+    margin-top: 4px;
     vertical-align: middle;
     }
 
