@@ -40,6 +40,7 @@ body {
 
 .column img {
     margin-top: 0px;
+    max-width: 400px;
     vertical-align: middle;
     }
 
