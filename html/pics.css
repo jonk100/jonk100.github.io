@@ -11,6 +11,7 @@ body {
 
 img {
 	border: solid 2px white;
+    max-width: 480px ;
 	}
 
 /* for pics page */
