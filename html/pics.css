@@ -31,22 +31,28 @@ body {
     padding: 0px 0px;
     }
 
-/* Create four equal columns that sits next to each other */
+/* Create five equal columns that sit next to each other */
 .column {
-    flex: 25%;
-    max-width: 400px;
+    flex: 20%;
     padding: 0px 0px;
     align: middle
     }
 
 .column img {
     margin-top: 0px;
-    max-width: 400px;
     vertical-align: middle;
     }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+/* Create four equal columns that sit next to each other on laptop screens */
+@media screen and (max-width: 1920px) {
+    .column {
+        flex: 25%;
+        padding: 0px 0px;
+        align: middle
+        }
+
+/* Responsive layout - makes a one column-layout instead of four columns */
+@media screen and (max-width: 600px) {
     .column {
         flex: 100%;
         max-width: 100%;
