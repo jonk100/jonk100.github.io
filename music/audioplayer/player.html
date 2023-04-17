@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <title>theAppleseeds</title>
+    <link rel="stylesheet" href="/html/main.css">
+    <link rel="icon" type="image/x-icon" href="/graphics/favicon(1).ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta charset="utf-8">
+    
+  </head>
+
+  <body>
+
+    <!-- Banner Image and Navbar-->
+    <div class="bg-img">
+      <div class="container2">
+        <div class="topnav">
+          <a href="https://www.theappleseeds.com/music">Songs</a>
+          <a href="https://www.theappleseeds.com/pics">Gallery</a>
+          <a href="https://www.theappleseeds.com/contact">Contact</a>          
+          <a href="https://www.theappleseeds.com">Home</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="audio-player-container">
+      <audio src=”https://www.theappleseeds.com/music/animalinside.mp3” preload=”metadata” loop>
+      <p>Audio Player</p>
+      <!-- swaps with pause icon -->
+      <button id="play-icon"></button>
+      <!-- Time section -->
+      <span id="current-time" class="time">0:00</span>
+      <input type="range" id="seek-slider" max="100" value="0">
+      <span id="duration" class="time">0:00</span>
+      <!-- Volume slider -->
+      <output id="volume-output">100</output>
+      <input type="range" id="volume-slider" max="100" value="100">
+      <!-- Mute button -->
+      <button id="mute-icon"></button>
+    </div>
