@@ -8,8 +8,6 @@ const muteIconContainer = document.getElementById('mute-icon');
 let playState = 'play';
 let muteState = 'unmute';
 
-playAnimation.goToAndStop(14, true);
-
 playIconContainer.addEventListener('click', () => {
     if(playState === 'play') {
         audio.play();
