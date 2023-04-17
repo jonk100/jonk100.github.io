@@ -1,5 +1,4 @@
 /* Implementation of the presentation of the audio player */
-import lottieWeb from 'https://cdn.skypack.dev/lottie-web';
 
 const playIconContainer = document.getElementById('play-icon');
 const audioPlayerContainer = document.getElementById('audio-player-container');
@@ -9,47 +8,23 @@ const muteIconContainer = document.getElementById('mute-icon');
 let playState = 'play';
 let muteState = 'unmute';
 
-const playAnimation = lottieWeb.loadAnimation({
-  container: playIconContainer,
-  path: 'https://maxst.icons8.com/vue-static/landings/animated-icons/icons/pause/pause.json',
-  renderer: 'svg',
-  loop: false,
-  autoplay: false,
-  name: "Play Animation",
-});
-
-const muteAnimation = lottieWeb.loadAnimation({
-    container: muteIconContainer,
-    path: 'https://maxst.icons8.com/vue-static/landings/animated-icons/icons/mute/mute.json',
-    renderer: 'svg',
-    loop: false,
-    autoplay: false,
-    name: "Mute Animation",
-});
-
 playAnimation.goToAndStop(14, true);
 
 playIconContainer.addEventListener('click', () => {
     if(playState === 'play') {
         audio.play();
-        playAnimation.playSegments([14, 27], true);
-        requestAnimationFrame(whilePlaying);
         playState = 'pause';
     } else {
         audio.pause();
-        playAnimation.playSegments([0, 14], true);
-        cancelAnimationFrame(raf);
         playState = 'play';
     }
 });
 
 muteIconContainer.addEventListener('click', () => {
     if(muteState === 'unmute') {
-        muteAnimation.playSegments([0, 15], true);
         audio.muted = true;
         muteState = 'mute';
     } else {
-        muteAnimation.playSegments([15, 25], true);
         audio.muted = false;
         muteState = 'unmute';
     }
@@ -144,7 +119,7 @@ volumeSlider.addEventListener('input', (e) => {
 
 
 
-/* Implementation of the Media Session API */
+/* Implementation of the Media Session API
 if('mediaSession' in navigator) {
     navigator.mediaSession.metadata = new MediaMetadata({
         title: 'Komorebi',
@@ -210,3 +185,8 @@ if('mediaSession' in navigator) {
         }
     });
 }
+
+function newFunction() {
+    return 'https://maxst.icons8.com/vue-static/landings/animated-icons/icons/pause/pause.json';
+}
+*/
