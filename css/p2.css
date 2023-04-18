@@ -10,7 +10,7 @@
 }
 
 body,html {
-    height:100%
+    height:60%
 }
 
 body {
@@ -55,12 +55,11 @@ body {
 
 /* album size, position */
 .player__album {
-    width:160px;
-    height:160px;
+    width:120px;
+    height:120px;
     margin-right:200px;
-    margin-left:-50px;
     position:relative;
-    top:-90px;
+    top:-60px;
     -webkit-transition:all 1s ease-in-out;
     -o-transition:all 1s ease-in-out;
     transition:all 1s ease-in-out
