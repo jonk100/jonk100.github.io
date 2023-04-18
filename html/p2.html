@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Animal Inside - theAppleseeds</title>
+        <link rel="stylesheet" href="/html/main.css">
+        <link rel="icon" type="image/x-icon" href="/graphics/favicon(1).ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+        <link rel="stylesheet" href="/css/p2.css">
+        <script src="/js/p2.js"></script>
+    </head>
+
+    <body>
+
+        <!-- Banner Image and Navbar-->
+        <div class="bg-img">
+        <div class="container2">
+            <div class="topnav">
+            <a href="/music">Songs</a>
+            <a href="/pics">Gallery</a>
+            <a href="/contact">Contact</a>
+            <a href="/">Home</a>
+            </div>
+        </div>
+        </div>
+        <br>
+
+        <div class="player">
+            <div class="player__bar">
+                <div class="player__album">
+                    <div class="player__albumImg active-song" data-author="Annie & Jon Appleseed" data-song="Holy Water" data data-src="music/holywater.mp3"
+                        style="background-image: url(graphics/godspeedyouth.jpg)">
+                    </div>
+                    <div class="player__albumImg active-song" data-author="Annie & Jon Appleseed" data-song="Crashed Mummy" data data-src="music/crashedmummy.mp3"
+                        style="background-image: url(graphics/godspeedyouth.jpg)">
+                    </div>
+                    <div class="player__albumImg active-song" data-author="Annie & Jon Appleseed" data-song="Think for Yourself" data data-src="music/thinkforyourself.mp3"
+                        style="background-image: url(graphics/godspeedyouth.jpg)">
+                    </div>
+                </div>
+                <div class="player__controls">
+        
+                    <div class="player__prev">
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#arrow"></use>
+                        </svg>
+                    </div>
+        
+                    <div class="player__play">
+                        <svg class="icon play">
+                            <use xlink:href="/graphics/p2/sprite.svg#play"></use>
+                        </svg>
+                        <svg class="icon pause">
+                            <use xlink:href="img/sprite.svg#pause"></use>
+                        </svg>
+                    </div>
+        
+                    <div class="player__next">
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#arrow"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="player__timeline">
+                <p class="player__author"></p>
+                <p class="player__song"></p>
+                <div class="player__timelineBar">
+                    <div id="playhead"></div>
+                </div>
+            </div>
+        </div>  
+
+
+
+    </body>
+
+</html>
