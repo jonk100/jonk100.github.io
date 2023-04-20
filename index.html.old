@@ -10,117 +10,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-
-    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--> 
-</head>
-
-
-<body>
-      <!-- Banner Image and Navbar-->
-      <div class="bg-img">
-        <div class="container">
-          <div class="topnav">
-            <a href="https://www.theappleseeds.com/music">Songs</a>
-            <a href="https://www.theappleseeds.com/pics">Gallery</a>
-            <a href="https://www.theappleseeds.com/contact">Contact</a>          
-            <a href="https://www.theappleseeds.com">Home</a>
-            
-          </div>
-        </div>
-      </div><br><br><br>
-
-    <div class="row">
-      <link rel="stylesheet" href="/css/p2.css">
-      <!-- SWEET AUDIO PLAYER  -->
     
-      <div class="contain">
-        <div class="player">
-          <div class="player__bar">
+  </head>
 
-            <!-- SONGS IN PLAYER -->
-            <div class="player__album">
-              <div class="player__albumImg active-song" data-author="The Appleseeds" data-song="3. Holy Water" data data-src="/music/holywater.mp3" style="background-image: url(/graphics/godspeedyouth.jpg)">
-              </div>
-              <div class="player__albumImg" data-author="Eskimo Stepdaddy" data-song="4. Think for Yourself" data data-src="https://www.theappleseeds.com/music/thinkforyourself.mp3" style="background-image: url(/graphics/godspeedyouth.jpg)">
-              </div>
-              <div class="player__albumImg" data-author="The Appleseeds" data-song="5. Crashed Mummy" data data-src="https://www.theappleseeds.com/music/crashedmummy.mp3" style="background-image: url(/graphics/godspeedyouth.jpg)">
-              </div>                      
-              <div class="player__albumImg" data-author="The Appleseeds" data-song="6. Another Hand" data data-src="https://www.theappleseeds.com/music/anotherhand.mp3" style="background-image: url(/graphics/godspeedyouth.jpg)">
-              </div> 
-              <div class="player__albumImg" data-author="The Appleseeds" data-song="10. Old Country Man" data data-src="https://www.theappleseeds.com/music/oldcountryman.mp3" style="background-image: url(/graphics/godspeedyouth.jpg)">
-              </div> 
-              <div class="player__albumImg" data-author="Eskimo Stepdaddy" data-song="1. Wanna Be" data data-src="https://www.theappleseeds.com/music/wannabe.mp3" style="background-image: url(/graphics/godspeedyouth.jpg)">
-              </div>
-              <div class="player__albumImg" data-author="Eskimo Stepdaddy" data-song="2. Animal Inside" data data-src="https://www.theappleseeds.com/music/animalinside.mp3" style="background-image: url(/graphics/godspeedyouth.jpg)">
-              </div>
+  <body>
 
-              
-                                                       
-            </div>
-
-            <!-- PLAYER CONTROLS -->
-            <div class="player__controls">
-
-              <div class="player__prev">
-                <svg class="icon">
-                  <use xlink:href="/graphics/p2/sprite.svg#arrow"></use>
-                </svg>
-              </div>
-
-              <div class="player__play">
-                <svg class="icon play">
-                  <use xlink:href="/graphics/p2/sprite.svg#play"></use>
-                </svg>
-                <svg class="icon pause">
-                  <use xlink:href="/graphics/p2/sprite.svg#pause"></use>
-                </svg>
-              </div>
-
-              <div class="player__next">
-                <svg class="icon">
-                  <use xlink:href="/graphics/p2/sprite.svg#arrow"></use>
-                </svg>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="player__timeline">
-            <p class="player__author"></p>
-            <p class="player__song"></p>
-            <div class="player__timelineBar">
-            <div id="playhead"></div>
-          </div>
-          </div>
-
+    <!-- Banner Image and Navbar-->
+    <div class="bg-img">
+      <div class="container2">
+        <div class="topnav">
+          <a href="https://www.theappleseeds.com/music">Songs</a>
+          <a href="https://www.theappleseeds.com/pics">Gallery</a>
+          <a href="https://www.theappleseeds.com/contact">Contact</a>          
+          <a href="https://www.theappleseeds.com">Home</a>
         </div>
       </div>
     </div>
 
-  
-
-<!-- END CONTENT  -->
-
-    <p><br>(Click song title below to download MP3)</p>
-
-
     <!-- 3 columns of songs, each song has html audio player, download link, and lyrics -->
     <div class="row">
-    
+    <br>
 
       <!-- COLUMN #1 - Wannabe, Animal Inside -->
       <div class="column" style="background-color:#9554bb10;"><br>
                 
-       <!-- WANNABE -->
-          <h2 id="wannabe"><a href="/music/wannabe.mp3" download="wannabe">Wanna Be</h2></a>
-          <!-- <hr class="rounded2"><hr class="rounded">
+        <!-- WANNABE -->
+          <h2 id="wannabe">Wanna Be</h2>
+          <hr class="rounded2"><hr class="rounded">
           <audio controls src="/music/wannabe.mp3">
             <h6>Your browser won't use the html audio player....<br></h6>
           </audio><br><hr class="rounded"><h4><hr class="rounded2"> 
           <h4><a href="/music/wannabe.mp3" download="wannabe">DOWNLOAD</a><br>(.mp3)</h4>
-       -->
+        <!-- -->
 
         <p>
           I know you, youre sitting there<br>
@@ -163,18 +84,19 @@
           But I'm so sick of the games we play,<br>
           Just let us be<br>
           Let us be<br>
-          I want to be<br>
+          I want to be
         </p>
-        
+        <br>
+        <br>
 
-        <!-- ANIMAL INSIDE -->      
-          <h2 id="animalinside"><a href="/music/animalinside.mp3" download="animalinside">Animal Inside</h2></a>
-          <!--<hr class="rounded2"><hr class="rounded">
+        <!-- ANIMAL INSIDE -->
+          <h2 id="animalinside">Animal Inside</h2>
+          <hr class="rounded2"><hr class="rounded">
           <audio controls src="/music/animalinside.mp3">
             <h6>Your browser won't use the html audio player....<br></h6>
           </audio><br><hr class="rounded"><h4><hr class="rounded2">
           <h4><a href="/music/animalinside.mp3" download="animalinside">DOWNLOAD <br></a>(.mp3)</h4>
-         -->
+        <!-- -->
 
         <p>
           (... now?)<br>
@@ -243,69 +165,25 @@
           I'm not your enemy,<br>
           I've got an animal inside too<br><br>
         </p>
+        <br>
+        <br>
 
-        <!-- ANOTHER HAND -->
-        <h2 id="oldcountryman"><a href="/music/oldcountryman.mp3" download="oldcountryman">Old Country Man</h2></a>
-        <!--<hr class="rounded2"><hr class="rounded">
-        <audio controls="" src="/music/anotherhand.mp3">
-          <h6>Your browser won't use the html audio player....<br></h6>
-        </audio><hr class="rounded"><h4><hr class="rounded2">
-        -->
+      </div>
+
       <br>
-
-      <p>
-        I came across a man,<br> 
-        from the old country some time ago,<br>
-        He had a ribbon in his hat, <br>
-        and I loved him for that,<br>
-        Yeah, you know,<br><br>
-
-        Woa is him,<br> 
-        he looked grim,<br> 
-        he looked tough,<br>
-        Woa is he, I'd already had enough,<br>
-        But he called, so I waited for him,<br><br>
-
-        He said, "Hello, my friend,<br> 
-        have you seen a blue locket?"<br>
-        Said, "no."<br>
-        He held up one finger as he reached in his pocket, "Here you go"<br><br>
-
-        Woa is me, <br>
-        I decree, <br>
-        what a terrible joke,<br>
-        Woa is he, <br>
-        Cuz I was drunk, and on coke, <br>
-        So I shot him,<br><br>
-
-        When I saw him again,<br> I admit that I was a bit shaken,<br>
-        He looked pale, not dead,<br> but with a hole in his head,<br> and he'd awakened,<br>
-
-        Woa is me,<br> not a man but a ghost,<br>
-        It was he, <br>even though he was supposed to be dead,<br><br>
-
-        I laced up my boots,<br> readied my mind for a fight,<br>
-        I went for my weapon, but then I didn't need one that night,<br><br>
-
-        Woa now, I wonder,<br> 
-        how the hell he forgot,<br>
-        Woa and then, <br>
-        he asked me to borrow my pen,<br> 
-        I think not.. <br><br>
-      </p></div>
 
       <!-- COLUMN 2 - Holy Water, Think for Yoursel-->
       <div class="column" style="background-color:#9554bb17;"><br>
             
 
         <!-- HOLY WATER -->
-          <h2 id="holywater"><a href="/music/holywater.mp3" download="holywater">Holy Water</h2></a>
-          <!-- <hr class="rounded2"><hr class="rounded">
+          <h2 id="holywater">Holy Water</h2>
+          <hr class="rounded2"><hr class="rounded">
           <audio controls src="/music/holywater.mp3">
             <h6>Your browser won't use the html audio player....<br></h6>
           </audio><hr class="rounded"><h4><hr class="rounded2">
           <a href="/music/holywater.mp3" download="holywater">DOWNLOAD <br></a>(.mp3)</h4>
-         -->
+        <!-- -->
 
         <p>
           Why are you haunting me ghost?<br>
@@ -384,16 +262,17 @@
           (miscellaneous harmonies)<br>
           Go home, ghost!<br><br>
         </p>
-
+        <br>
+        <br>
 
         <!-- THINK FOR YOURSELF -->
-          <h2 id="thinkforyourself"><a href="/music/thinkforyourself.mp3" download="thinkforyourself">Think for Yourself</h2></a>
-          <!--<hr class="rounded2"><hr class="rounded">
+          <h2 id="thinkforyourself">Think for Yourself</h2>
+          <hr class="rounded2"><hr class="rounded">
           <audio controls src="/music/thinkforyourself.mp3">
             <h6>Your browser won't use the html audio player....<br></h6>
           </audio><br><hr class="rounded"><h4><hr class="rounded2">
           <h4><a href="/music/thinkforyourself.mp3" download="thinkforyourself">DOWNLOAD <br></a>(.mp3)</h4>
-         -->
+        <!-- -->
 
         <p>
           If a wise man said<br>
@@ -443,20 +322,24 @@
           Or twisted forces paying cash<br>
           Will do it for you, only they know how<br>
         </p>
+        <br>
+        <br>
 
       </div>
+
+      <br>
 
       <!-- COLUMN #3 - Crashed Mummy, Another Hand-->
       <div class="column" style="background-color:#9554bb27;"><br>
 
         <!-- CRASHED MUMMY -->
-          <h2 id="crashedmummy"><a href="/music/crashedmummy.mp3" download="crashedmummy">Crashed Mummy</h2></a>
-         <!-- <hr class="rounded2"><hr class="rounded">
+          <h2 id="crashedmummy">Crashed Mummy</h2>
+          <hr class="rounded2"><hr class="rounded">
           <audio controls src="/music/crashedmummy.mp3">
             <h6>Your browser won't use the html audio player....<br></h6>
           </audio><br><hr class="rounded"><h4><hr class="rounded2">
           <h4><a href="/music/crashedmummy.mp3" download="crashedmummy">DOWNLOAD <br></a>(.mp3)</h4>
-         -->
+        <!-- -->
 
         <p>
           Flying through time and space,<br>
@@ -578,13 +461,13 @@
 
 
         <!-- ANOTHER HAND -->
-          <h2 id="anotherhand"><a href="/music/anotherhand.mp3" download="anotherhand">Another Hand</h2></a>
-          <!--<hr class="rounded2"><hr class="rounded">
+          <h2 id="anotherhand">Another Hand</h2>
+          <hr class="rounded2"><hr class="rounded">
           <audio controls="" src="/music/anotherhand.mp3">
             <h6>Your browser won't use the html audio player....<br></h6>
           </audio><hr class="rounded"><h4><hr class="rounded2">
           <a href="/music/anotherhand.mp3" download="anotherhand">DOWNLOAD <br></a>(.mp3)</h4>
-        -->
+        <!---->
 
         <p>
           I need another hand, he said,<br>
@@ -646,10 +529,6 @@
         <a href="#top">top</a>
       </p>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="/js/p2.js"></script>
-  </body>
 
-  </html>
+  </body>
+</html>
