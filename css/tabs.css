@@ -2,8 +2,9 @@
 .tab {
   overflow: hidden;
   border: 1px solid #cccccc;
-  background-color: rgba(185, 255, 188, 0.877);
+  background-color:#d9ffe7;
   width: 65%;
+  height:fit-content;
   margin:auto;
   display: table; 
   table-layout: fixed; 
@@ -20,7 +21,7 @@
   border-top: none;
   border-bottom: none;
   border-left: none;
-  border-right: 1px solid rgba(149, 170, 149, 0.445);
+  border-right: 1px solid rgba(236, 243, 236, 0.445);
   outline: none;
   cursor: pointer;
   vertical-align: middle;
