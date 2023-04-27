@@ -1,12 +1,53 @@
 {
   "": {
-    "prefix": "",
+    "prefix": "ly/wannabe",
     "scope": "html",
     "body": [
-      "            <!-- -->\r",
-      ""
+      "<p>\r",
+      "          I know you, youre sitting there<br>\r",
+      "          In your favorite chair<br>\r",
+      "          Eyes on some guys on TV<br>\r",
+      "          Thinking about me<br><br>\r",
+      "          \r",
+      "          Why do you even care<br>\r",
+      "          If i go to sleep?<br>\r",
+      "          I'll be there tomorrow anyway<br>\r",
+      "          No hours to keep<br><br>\r",
+      "          \r",
+      "          If you put as much time<br>\r",
+      "          Into yours as you did mine<br>\r",
+      "          You could be<br>\r",
+      "          Don't you want to be?<br><br>\r",
+      "          \r",
+      "          I know its not my place to say<br>\r",
+      "          I'm so sick of the games, i don't play<br>\r",
+      "          I just want to be<br>\r",
+      "          Ya, I wanna be<br><br>\r",
+      "          \r",
+      "          I try to write a song<br>\r",
+      "          All I see is you<br>\r",
+      "          It's a silly place to go<br>\r",
+      "          But at least I know<br><br>\r",
+      "\r",
+      "          So please just do it as you please<br>\r",
+      "          You're always on your knees,<br>\r",
+      "          Ok, i like it that way<br>\r",
+      "          You know i do, but please today<br>\r",
+      "          I hope you<br><br>\r",
+      "          \r",
+      "          Put as much time<br>\r",
+      "          Into yours as you have mine<br>\r",
+      "          Please just want to be<br>\r",
+      "          Please just want to be<br><br>\r",
+      "          \r",
+      "          And I know its not my place to say<br>\r",
+      "          But I'm so sick of the games we play,<br>\r",
+      "          Just let us be<br>\r",
+      "          Let us be<br>\r",
+      "          I want to be<br>\r",
+      "        </p>"
     ],
-    "description": ""
+    "description": "Lyrics for wannabe"
   }
 	// Place your jonk100.github.io workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
 	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 

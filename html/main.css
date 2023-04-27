@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 
+
+
 /* background image (body) */
 body {
     background-image: url('/graphics/background.png');
@@ -169,4 +171,8 @@ hr.rounded {
 
 .songnav p {
     font-size: 14px ;
+}
+
+.tabcontent {
+  text-align:left;
 }

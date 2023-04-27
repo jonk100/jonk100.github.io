@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../graphics/favicon(1).ico">
+  <link rel="stylesheet" href="https://www.theappleseeds.com/html/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<body>
+    
+  <!-- Banner Image and Navbar-->
+  <div class="bg-img">
+    <div class="container2">
+      <div class="topnav">
+        <a href="https://www.theappleseeds.com/music">Songs</a>
+        <a href="https://www.theappleseeds.com/pics">Gallery</a>
+        <a href="https://www.theappleseeds.com/contact">Contact</a>          
+        <a href="https://www.theappleseeds.com">Home</a>
+      </div>
+    </div> 
+  </div>
+  <br>
+
+        <!-- SWEET AUDIO PLAYER  -->
+        <link rel="stylesheet" href="https://www.theappleseeds.com/css/p2.css">
+            
+        <div class="contain">
+          <div class="player">
+            <div class="player__bar">
+  
+              <!-- SONGS IN PLAYER -->
+              <div class="player__album">
+                <div class="player__albumImg active-song" data-author="The Appleseeds" data-song="3. Holy Water" data data-src="https://www.theappleseeds.com/music/holywater.mp3" style="background-image: url(https://www.theappleseeds.com/graphics/godspeedyouth.jpg)">
+                </div>
+                <div class="player__albumImg" data-author="Eskimo Stepdaddy" data-song="4. Think for Yourself" data data-src="https://www.theappleseeds.com/music/thinkforyourself.mp3" style="background-image: url(/graphics/godspeedyouth.jpg)">
+                </div>
+                <div class="player__albumImg" data-author="The Appleseeds" data-song="5. Crashed Mummy" data data-src="https://www.theappleseeds.com/music/crashedmummy.mp3" style="background-image: url(/graphics/godspeedyouth.jpg)">
+                </div>                      
+                <div class="player__albumImg" data-author="The Appleseeds" data-song="6. Another Hand" data data-src="https://www.theappleseeds.com/music/anotherhand.mp3" style="background-image: url(/graphics/godspeedyouth.jpg)">
+                </div> 
+                <div class="player__albumImg" data-author="The Appleseeds" data-song="10. Old Country Man" data data-src="https://www.theappleseeds.com/music/oldcountryman.mp3" style="background-image: url(/graphics/godspeedyouth.jpg)">
+                </div> 
+                <div class="player__albumImg" data-author="Eskimo Stepdaddy" data-song="1. Wanna Be" data data-src="https://www.theappleseeds.com/music/wannabe.mp3" style="background-image: url(/graphics/godspeedyouth.jpg)">
+                </div>
+                <div class="player__albumImg" data-author="Eskimo Stepdaddy" data-song="2. Animal Inside" data data-src="https://www.theappleseeds.com/music/animalinside.mp3" style="background-image: url(/graphics/godspeedyouth.jpg)">
+                </div>
+  
+                
+                                                         
+              </div>
+  
+              <!-- PLAYER CONTROLS -->
+              <div class="player__controls">
+  
+                <div class="player__prev">
+                  <svg class="icon">
+                    <use xlink:href="https://www.theappleseeds.com//graphics/p2/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+  
+                <div class="player__play">
+                  <svg class="icon play">
+                    <use xlink:href="https://www.theappleseeds.com//graphics/p2/sprite.svg#play"></use>
+                  </svg>
+                  <svg class="icon pause">
+                    <use xlink:href="https://www.theappleseeds.com//graphics/p2/sprite.svg#pause"></use>
+                  </svg>
+                </div>
+  
+                <div class="player__next">
+                  <svg class="icon">
+                    <use xlink:href="https://www.theappleseeds.com//graphics/p2/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+  
+              </div>
+            </div>
+
+            <!-- Pop-Out Song Title and Timeline Bar -->
+            <div class="player__timeline">
+              <p class="player__author"></p>
+              <p class="player__song"></p>
+              <div class="player__timelineBar">
+                <div id="playhead"></div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+      <!-- END CONTENT  -->
+
+      <link rel="stylesheet" href="https://www.theappleseeds.com/css/tabs.css">
+
+      <!-- Tab links -->
+      <div class="tab">
+        <button class="tablinks" onclick="openSong(event, 'wannabe')">Wanna Be</button>
+        <button class="tablinks" onclick="openSong(event, 'animalinside')">Animal Inside</button>
+        <button class="tablinks" onclick="openSong(event, 'holywater')">Holy Water</button>
+        <button class="tablinks" onclick="openSong(event, 'thinkforyourself')">Think for Yourself</button>
+        <button class="tablinks" onclick="openSong(event, 'crashedmummy')">Crashed Mummy</button>
+        <button class="tablinks" onclick="openSong(event, 'anotherhand')">Another Hand</button>
+        <button class="tablinks" onclick="openSong(event, 'oldcountryman')">Old Country Man</button>
+      </div>
+
+      <!-- Tab content -->
+      <div id="wannabe" class="tabcontent">
+        <h3>Wanna Be</h3>
+          <p>
+            I know you, youre sitting there<br>
+            In your favorite chair<br>
+            Eyes on some guys on TV<br>
+            Thinking about me<br><br>
+            
+            Why do you even care<br>
+            If i go to sleep?<br>
+            I'll be there tomorrow anyway<br>
+            No hours to keep<br><br>
+            
+            If you put as much time<br>
+            Into yours as you did mine<br>
+            You could be<br>
+            Don't you want to be?<br><br>
+            
+            I know its not my place to say<br>
+            I'm so sick of the games, i don't play<br>
+            I just want to be<br>
+            Ya, I wanna be<br><br>
+            
+            I try to write a song<br>
+            All I see is you<br>
+            It's a silly place to go<br>
+            But at least I know<br><br>
+
+            So please just do it as you please<br>
+            You're always on your knees,<br>
+            Ok, i like it that way<br>
+            You know i do, but please today<br>
+            I hope you<br><br>
+            
+            Put as much time<br>
+            Into yours as you have mine<br>
+            Please just want to be<br>
+            Please just want to be<br><br>
+            
+            And I know its not my place to say<br>
+            But I'm so sick of the games we play,<br>
+            Just let us be<br>
+            Let us be<br>
+            I want to be<br>
+          </p>
+      </div>
+
+      <div id="animalinside" class="tabcontent">
+        <h3>Animal Inside</h3>
+        <p>
+          (... now?)<br>
+
+          Show me your feathers,<br>
+          Show me your teeth,<br>
+          Let me see what you've got hiding underneath,<br>
+          Your fancy suit,<br><br>
+
+          I took one look at you,<br>
+          Saw the way you moved,<br>
+          And I think I knew,<br>
+          You might be something Id be into,<br><br>
+
+          Animal inside,<br>
+          Wagging tails,<br>
+          Eight, nine, or five?<br>
+          Or are they stuck between your legs?<br><br>
+
+          No need to hide,<br>
+          You can talk to me,<br>
+          I'm not your enemy,<br>
+          I've got an animal inside too,<br><br>
+
+          You could be a reptile, <br>
+          A mammal, a bird or a fish,<br>
+          The greatest guy,<br>
+          Or the biggest bitch,<br><br>
+
+          You could be a cephalopod,<br>
+          Or an invertebrate,<br>
+          The nicest lady,<br>
+          Or an ingrate,<br><br>
+
+          Animal inside,<br>
+          Wagging tails,<br>
+          Eight, nine, or five?<br>
+          Or are they stuck between your legs?<br><br>
+
+          No need to hide,<br>
+          You can talk to me,<br>
+          I'm not your enemy,<br>
+          I've got an animal inside, too,<br><br>
+
+          You could be so well-intentioned,<br>
+          That it hurt you,<br>
+          Or a careless, typical human,<br>
+          I'd desert you,<br><br>
+
+          Maybe a powerful,<br>
+          Force for good,<br>
+          Or an evil and dangerous cancer,<br>
+          Don't know if I should,<br>
+          Talk to you at all,<br>
+          Or why I'm even writing this song,<br>
+          But if you're feeling it,<br>
+          Fuck it... just come along<br><br>
+
+          Animal inside,<br>
+          Wagging tails,<br>
+          Eight, nine, or five?<br>
+          Or are they stuck between your legs?<br><br>
+
+          No need to hide,<br>
+          You can talk to me,<br>
+          I'm not your enemy,<br>
+          I've got an animal inside too<br><br>
+        </p>
+      </div>
+
+  
+
+  
+
+  <!-- CONTENT -->
+
+
+  <!-- CONTENT -->
+
+
+  <!-- CONTENT -->
+
+
+  <!-- CONTENT -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://www.theappleseeds.com/js/p2.js"></script>
+  <script src="https://www.theappleseeds.com/js/tabs.js"></script>
+</body>
+
+
+</html>
