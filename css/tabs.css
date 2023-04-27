@@ -5,17 +5,29 @@
   background-color: rgba(185, 255, 188, 0.877);
   width: 65%;
   margin:auto;
+  display: table; 
+  table-layout: fixed; 
+}
+
+.tab div {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
-  float:inherit;
   background-color: inherit;
-  border: none;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: 1px solid green;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  vertical-align: middle;
+  padding: 10px 10px;
   transition: 0.3s;
+  width: 100%;
+  
 }
 
 /* Change background color of buttons on hover */
