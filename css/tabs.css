@@ -20,7 +20,7 @@
   border-top: none;
   border-bottom: none;
   border-left: none;
-  border-right: 1px solid green;
+  border-right: 1px solid rgba(149, 170, 149, 0.445);
   outline: none;
   cursor: pointer;
   vertical-align: middle;
@@ -57,3 +57,8 @@ p {
   text-align: left;
 }
 
+@media screen and (max-width: 900px) {
+  .tab {
+    width: 100%;
+  }
+}
