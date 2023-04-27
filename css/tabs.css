@@ -2,7 +2,8 @@
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
-  background-color: rgba(127, 219, 132, 0.781);
+  background-color: rgba(0, 90, 5, 0.363);
+
   padding: 10px;
 }
 
@@ -19,16 +20,17 @@
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: rgba(0, 90, 5, 0.644);
+  background-color: rgba(127, 219, 165, 0.897);
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: rgba(214, 165, 255, 0.726);
+  background-color: rgba(214, 165, 255, 0.637);
 }
 
 /* Style the tab content */
 .tabcontent {
+  text-align: start;
   display: none;
   padding: 6px 12px;
   background-color: rgba(214, 165, 255, 0.726);
