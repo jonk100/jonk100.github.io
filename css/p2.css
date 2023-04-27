@@ -14,10 +14,12 @@ body,html {
     height:68%
 }
 
+
 body {
     background-color: rgb(255, 255, 255);
     position:relative
 }
+
 
 .player,.player__album:before,.player__play svg {
     position:absolute;
@@ -28,31 +30,34 @@ body {
     transform:translate(-50%,-50%)
 }
 
+
 .player.play .player__timeline {
     -webkit-transform:translateY(-90%);
     -ms-transform:translateY(-90%);
     transform:translateY(-90%)
 }
 
+
 .player.play .player__album:after {
     -webkit-box-shadow:0 30px 28px -10px rgba(0,0,0,.2);
     box-shadow:0 30px 56px 6px rgba(80, 0, 146, 0.253);
-    
 }
+
 
 .player.play, .player__album {
     top: 50%;
 }
 
 
-
 .player.play .pause {
     display:inline-block
 }
 
+
 .player.play .play {
     display:none
 }
+
 
 /* album size, position */
 .player__album {
@@ -66,6 +71,7 @@ body {
     transition:all 1s ease-in-out
 }
 
+
 /* hole in the album */
 .player__album:before {
     content:'';
@@ -75,12 +81,14 @@ body {
     background:#000000;
 }
 
+
 .player__album,.player__album:after,.player__album:before,.player__albumImg {
     -webkit-border-radius:50%;
     border-radius: 50%;
     border: solid #324640 .25px ;
     
 }
+
 
 .player__album:after {
 
@@ -93,7 +101,8 @@ body {
     position:absolute;
 
 }
-    
+   
+
 .player__albumImg {
     -webkit-background-size:cover;
     background-size:cover;
@@ -106,9 +115,11 @@ body {
     display:none
 }
 
+
 .player__albumImg.active-song {
     display:block
 }
+
 
 .player__bar,.player__controls,.player__play,.player__prev {
     display:-webkit-box;
@@ -117,6 +128,8 @@ body {
     display:flex
 }
 
+
+/* Player controls overlay */
 .player__bar {
   background-color: rgb(214, 165, 255);
   padding:30px 0px 30px 0px;
@@ -135,6 +148,7 @@ body {
   top:0px;
 }
 
+
 .player__controls,.player__play,.player__prev {
     -webkit-box-align:center;
     -webkit-align-items:center;
@@ -142,18 +156,20 @@ body {
     align-items:center
 }
 
+
+/* Multimedia control Buttons */
 .player__play,.player__prev,.player__next {
-    cursor:pointer;
-    height:40px;
-    width:40px;
-    -webkit-border-radius:50%;
-    border-radius:50%;
-    -webkit-transition:all .2s ease-in-out;
-    -o-transition:all .2s ease-in-out;
-    transition:all .2s ease-in-out;
-    margin-right:10px;
-    border: solid 2px rgb(0, 0, 0); 
-    background:#ffffff
+  cursor:pointer;
+  height:40px;
+  width:40px;
+  -webkit-border-radius:50%;
+  border-radius:50%;
+  -webkit-transition:all .2s ease-in-out;
+  -o-transition:all .2s ease-in-out;
+  transition:all .2s ease-in-out;
+  margin-right:10px;
+  border: solid 2px rgb(0, 0, 0); 
+  background:#ffffff
 }
 
 .player__prev {
@@ -213,8 +229,6 @@ body {
     transition:all .2s ease-in-out
 }
 
-
-
 .player__timeline {
     background:#D8D0FC;
     height:60px;
@@ -237,6 +251,7 @@ body {
     flex-direction:column;
     border: solid 1px #000000;
 }
+
 
 .player #playhead,.player__timeline,.player__timelineBar {
     -webkit-border-radius:15px;
@@ -261,6 +276,8 @@ body {
     background:#000000
 }
 
+
+/* Song Information */
 .player__author {
     font-size:12px;
     line-height:.9;
