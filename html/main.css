@@ -6,7 +6,7 @@
 
 /* background image (body) */
 body {
-    background-image: url('/graphics/background.png');
+    background-image: url('https://www.theappleseeds.com/graphics/background.png');
     background-size: cover;
     background-position: bottom;
 }
@@ -99,7 +99,7 @@ a:link {
 
 /* Holds the BG image */
 .bg-img {
-    background-image: url('/graphics/banner.png');
+    background-image: url('https://www.theappleseeds.com/graphics/banner.png');
     min-height: 150px;
     background-position: left;
     background-repeat: no-repeat;
@@ -118,7 +118,7 @@ a:link {
 /* Navbar */
 .topnav {
     overflow: hidden;
-    background-color: rgba(214, 165, 255, 0.116);
+    background-color: rgba(214, 165, 255, 0.726);
     height: 100%;
     width: 100%;
     right: 0px;
