@@ -18,13 +18,14 @@
 /* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: inherit;
+  height: auto;
   border-top: none;
   border-bottom: none;
   border-left: none;
-  border-right: 1px solid rgba(236, 243, 236, 0.445);
+  border-right: 1px solid rgba(236, 243, 236, 0.884);
   outline: none;
   cursor: pointer;
-  vertical-align: middle;
+  vertical-align: auto;
   padding: 10px 10px;
   transition: 0.3s;
   width: 100%;
