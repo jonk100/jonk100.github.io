@@ -54,17 +54,13 @@
   border-top: none;
 }
 
-p {
-  text-align: left;
-}
-
 @media screen and (max-width: 900px) {
   .tab {
     width: 100%;
   }
+
   .tabcontent {
     width:100%;
     text-align:center;
-
   }
 }
