@@ -118,7 +118,7 @@ a:link {
 /* Navbar */
 .topnav {
     overflow: hidden;
-    background-color: #a690ffff;
+    background-color: rgba(166, 144, 255, 0.712);
     height: 100%;
     width: 100%;
     right: 0px;
