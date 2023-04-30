@@ -99,7 +99,7 @@ a:link {
 
 /* Holds the BG image */
 .bg-img {
-    background-image: url('https://www.theappleseeds.com/graphics/theappleseedsbanner1.png');
+    background-image: url('https://www.theappleseeds.com/graphics/theappleseedsbanner2.png');
     min-height: 200px;
     background-position: left;
     background-repeat: no-repeat;
@@ -134,7 +134,7 @@ a:link {
 }
 
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #bfffdf;
     color: #000000;
 }
 
