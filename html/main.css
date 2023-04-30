@@ -40,7 +40,7 @@ h2 {
     font-size: 1.75em;
     font-weight: 400;
     color: rgb(0, 90, 5);
-    text-shadow: 3px 2px 5px rgb(195, 158, 255);
+    text-shadow: 3px 2px 5px #a690ffff;
     margin-bottom: 0px;
     margin-top: 0px;
 }
@@ -100,7 +100,7 @@ a:link {
 /* Holds the BG image */
 .bg-img {
     background-image: url('https://www.theappleseeds.com/graphics/theappleseedsbanner1.png');
-    min-height: 150px;
+    min-height: 200px;
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -118,7 +118,7 @@ a:link {
 /* Navbar */
 .topnav {
     overflow: hidden;
-    background-color: rgba(214, 165, 255, 0.726);
+    background-color: #a690ffff;
     height: 100%;
     width: 100%;
     right: 0px;
@@ -139,7 +139,7 @@ a:link {
 }
 
 .rounded2 {
-    border-top: .5px solid #b596ff;
+    border-top: .5px solid #a690ffff;
     border-radius: 50%;
     width: 30%;
     margin-top: -3px;
@@ -148,7 +148,7 @@ a:link {
 }
 
 hr.rounded {
-    border-bottom: 1px solid #a879ff;
+    border-bottom: 1px solid #a690ffff;
     border-radius: 50%;
     width: 50%;
     margin-top: -1px;
