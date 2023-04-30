@@ -65,10 +65,7 @@ body {
 
 /* - - - - - - - - - - - - - - - - - - - - - - - Paragraph and header formatting */
 
-p {
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+
 
 h2 {
     text-align: center;
@@ -98,29 +95,14 @@ h6 {
     margin-bottom: 0px;
 }
 
-
-/* Create three equal columns that float next to each other */
-.column {
-    float: left;
-    margin-left: 3%;
-    width: 29%;
-    max-width:100%;
-    height:auto;
+p {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-    width: 100%;
-    }
-}
+
+
 
 .tab {
     overflow: hidden;
@@ -171,7 +153,7 @@ h6 {
     margin:auto;
     display: none;
     padding: 6px 12px;
-    background-color: #aeaef3;
+    background-color: #aeaef3d8;
     border: 1px solid #ccc;
     border-top: none;
 }
@@ -179,6 +161,7 @@ h6 {
   
 
 /* Other objects */
+
 img {
     max-width:100%;
     height:auto;
@@ -203,7 +186,19 @@ a:link {
 
 
 
-@media screen and (max-width: 900px) {
+
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column {
+    width: 100%;
+    }
+
+
+
+@media screen and (max-width: 800px) {
     .tab {
         width: 100%;
     }
@@ -218,37 +213,18 @@ a:link {
 /* - - - - - - - - - - - - - - - - - - - - DEPRECATED - - - */
 
 
-.songnav a {
-    color: #000000;
-    text-align: center;
-    padding: 4px 24px;
-    text-decoration: none;
-    font-size: 14px;
+/* Create three equal columns that float next to each other */
+.column {
+    float: left;
+    margin-left: 3%;
+    width: 29%;
+    max-width:100%;
+    height:auto;
 }
 
-.songnav a:hover {
-    background-color: #ddd;
-    color: #000000;
-}
-
-.songnav p {
-    font-size: 14px ;
-}
-
-.rounded2 {
-    border-top: .5px solid #a690ffff;
-    border-radius: 50%;
-    width: 30%;
-    margin-top: -3px;
-    margin-bottom: 1px;
-    margin-left: 35%;
-}
-
-hr.rounded {
-    border-bottom: 1px solid #a690ffff;
-    border-radius: 50%;
-    width: 50%;
-    margin-top: -1px;
-    margin-bottom: 0px;
-    margin-left: 25%;
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
