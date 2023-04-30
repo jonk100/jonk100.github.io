@@ -15,7 +15,7 @@ body {
 /* Holds the BG image for the header navigation bar */
 .bg-img {
     background-image: url('https://www.theappleseeds.com/graphics/theappleseedsbanner10.png');
-    min-height: 200px;
+    min-height: 100px;
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,7 +42,7 @@ body {
 /* Navbar */
 .topnav {
     overflow: hidden;
-    background-color: rgba(166, 144, 255, 0.712);
+    background-color: rgba(166, 144, 255, 0.575);
     height: 100%;
     width: 100%;
     right: 0px;
