@@ -41,6 +41,19 @@ $(document).ready(function () {
         playhead.style.width = percentage * 4 + 'px';
     });
 
+
+    // testing -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+
+    function updateTab() {
+        getElementById$('.tabcontent active').attr('data-src').innerHTML = 
+
+    }
+
+
+    // -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+
     function updateInfo() {
         $('.player__author').text($('.active-song').attr('data-author'));
         $('.player__song').text($('.active-song').attr('data-song'));
@@ -94,26 +107,5 @@ $(document).ready(function () {
         audioElement.setAttribute('src', $('.active-song').attr('data-src'));
         audioElement.play();
     });
-
-    // ______________________________
-
-    // Get the active song from p2.js
-    var activeSong = updateInfo();; // Replace this with the function that gets the active song from p2.js
-
-    // Loop through all the tabs in the HTML
-    var tabs = document.querySelectorAll('.tabcontent');
-    tabs.forEach(function (tab) {
-        
-    // Get the data-src attribute of the tab
-    var tabSrc = tab.getAttribute('data-src');
-
-    // If the tab's data-src attribute matches the active song, add the active class to the tab
-    if (tabSrc === activeSong) {
-        tab.classList.add('active');
-    } else {
-        // Otherwise, remove the active class from the tab
-        tab.classList.remove('active');
-    }
-});
 
 });
