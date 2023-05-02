@@ -1,89 +1,154 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial;}
+  <title>Audio Player</title>
+  <style type="text/css">
+    #audio-player { 
+      display: inline-block; 
+      position: relative;
+    }
+    #audio-player audio { 
+      display: block; 
+      width: 100%;
+    }
+    #audio-player .controls { 
+      position: absolute; 
+      bottom: 0; 
+      left: 0; 
+      width: 100%; 
+      background-color: #000000;
+    }
+    #audio-player .controls button { 
+      border: none; 
+      background-color: #eee; 
+      font-size: 1.2em;
+    }
+    #audio-player .progress-bar { 
+      width: 100%; 
+      height: 8px; 
+      background-color: #ccc; 
+      margin-bottom: 5px;
+    }
+    #audio-player .progress-bar span { 
+      display: block; 
+      height: 100%; 
+      background-color: #888;
+    }
+    #lyrics { 
+      display: block; 
+      margin-top: 10px; 
+      padding: 10px;
+    }
+  </style>
+  <script type="text/javascript">
+    var audioPlayer = document.getElementById('audio-player');
+    var audioSource = audioPlayer.getElementsByTagName('audio')[0];
+    var playButton = audioPlayer.getElementsByTagName('button')[0];
+    var pauseButton = audioPlayer.getElementsByTagName('button')[1];
+    var ffButton = audioPlayer.getElementsByTagName('button')[2];
+    var rwButton = audioPlayer.getElementsByTagName('button')[3];
+    var volButton = audioPlayer.getElementsByTagName('button')[4];
 
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
+    var songList = [
+      {
+        title: 'Wanna Be',
+        artist: 'Jon Appleseed',
+        audio: '../music/wannabe.mp3',
+        lyrics: 'I know you, youre sitting there in your favorite chair',
+      },
+      {
+        title: 'Animal Inside',
+        artist: 'Jon Appleseed',
+        audio: '../music/animalinside.mp3',
+        lyrics: 'now?',
+      },
+      {
+        title: 'Holy Water',
+        artist: 'Jon Appleseed',
+        audio: '../music/holywater.mp3',
+        lyrics: 'Why are you haunting me ghost?',
+      }
+      ];
 
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-}
+  var currentSong = 0;
+  var playing = false;
+  var timer;
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
-</style>
-</head>
-<body>
-
-<h2>Tabs</h2>
-<p>Click on the buttons inside the tabbed menu:</p>
-
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-</div>
-
-<div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
-</div>
-
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
-</div>
-
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+  window.onload = function() {
+    // Set the source of the audio element
+    audioSource.src = songList[currentSong].audio;
+    // Set the title of the audio player
+    audioPlayer.getElementsByClassName('title')[0].innerHTML = songList[currentSong].title + ' by ' + songList[currentSong].artist;
+    // Set the lyrics
+    document.getElementById('lyrics').innerHTML = songList[currentSong].lyrics;
   }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+
+  playButton.onclick = function() {
+    if (playing) {
+      audioSource.pause();
+      playButton.innerHTML = 'Play';
+      playing = false;
+    } else {
+      audioSource.play();
+      playButton.innerHTML = 'Pause';
+      playing = true;
+      timer = setInterval(updateProgress, 500);
+    }
   }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
-   
+
+  ffButton.onclick = function() {
+    audioSource.currentTime += 5;
+  }
+
+  rwButton.onclick = function() {
+        audioSource.currentTime -= 5;
+      }
+
+      volButton.onclick = function() {
+        if (audioSource.muted) {
+          audioSource.muted = false;
+          volButton.innerHTML = 'Mute';
+        } else {
+          audioSource.muted = true;
+          volButton.innerHTML = 'Unmute';
+        }
+      }
+
+      audioSource.onended = function() {
+        // Move to the next song
+        currentSong++;
+        if (currentSong >= songList.length) {
+          currentSong = 0;
+        }
+        // Set the source of the audio element
+        audioSource.src = songList[currentSong].audio;
+        // Set the title of the audio player
+        audioPlayer.getElementsByClassName('title')[0].innerHTML = songList[currentSong].title + ' by ' + songList[currentSong].artist;
+        // Set the lyrics
+        document.getElementById('lyrics').innerHTML = songList[currentSong].lyrics;
+        // Play the new song
+        audioSource.play();
+      }
+
+      function updateProgress() {
+        var percent = Math.floor((100 / audioSource.duration) * audioSource.currentTime);
+        audioPlayer.getElementsByClassName('progress-bar')[0].getElementsByTagName('span')[0].style.width = percent + '%';
+      }
+    </script>
+  </head>
+  <body>
+    <div id="audio-player">
+      <h2 class="title"></h2>
+      <audio src=""></audio>
+      <div class="controls">
+        <button>Play</button>
+        <button>Pause</button>
+        <button>FF</button>
+        <button>RW</button>
+        <button>Mute</button>
+        <div class="progress-bar"><span></span></div>
+      </div>
+    </div>
+    <div id="lyrics"></div>
 </body>
-</html> 
+</html>
