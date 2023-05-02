@@ -103,9 +103,9 @@ $(document).ready(function () {
     // Loop through all the tabs in the HTML
     var tabs = document.querySelectorAll('.tabcontent');
     tabs.forEach(function (tab) {
-        
+
     // Get the data-src attribute of the tab
-    var tabSrc = tab.getAttribute('data-src');
+    var tabSrc = tab.getAttribute('data-song');
 
     // If the tab's data-src attribute matches the active song, add the active class to the tab
     if (tabSrc === activeSong) {
