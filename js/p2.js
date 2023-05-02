@@ -98,7 +98,7 @@ $(document).ready(function () {
     // ______________________________
 
     // Get the active song from p2.js
-    var activeSong = updateInfo();; // Replace this with the function that gets the active song from p2.js
+    var activeSong =  $('.active-song').attr('data-src'); // the function that gets the active song
 
     // Loop through all the tabs in the HTML
     var tabs = document.querySelectorAll('.tabcontent');
