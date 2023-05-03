@@ -87,7 +87,7 @@ body {
 
 @media screen and (max-width: 800px) {
     .topnav a {
-        padding: 2px 2 px;
+        padding: 2px 2 px 2px 2px;
         font-size: 12px;
     }
 }
@@ -143,6 +143,7 @@ p {
 .tab {
     overflow: hidden;
     border: 1px solid #ffffff;
+    border-bottom: 0px solid #000000;
     background-color:#13e182;
     width: 65%;
     height:fit-content;
@@ -150,6 +151,8 @@ p {
     display: table; 
     table-layout: fixed; 
 }
+
+
 
 .tab div {
     display: table-cell;
@@ -172,6 +175,13 @@ p {
     width: 100%;
 }
 
+@media screen and (max-width: 800px) {
+    .tab button {
+        padding: 2px 2px 2px 2px;
+        font-size: 10px;
+    }
+}
+
 /* Change background color of buttons on hover */
 .tab button:hover {
     background-color: #bfffdf;
@@ -190,8 +200,8 @@ p {
     display: none;
     padding: 6px 12px;
     background-color: #95a0d9;
-    border: 1px solid #ccc;
-    border-top: none;
+    /*border: 1px solid #ccc;
+    border-top: none;*/
 }
 
   
