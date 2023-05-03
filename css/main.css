@@ -14,12 +14,23 @@ body {
 
 /* Holds the BG image for the header navigation bar */
 .bg-img {
-    background-image: url('https://www.theappleseeds.com/graphics/theappleseedsbanner.png');
+    background-image: url('../graphics/theappleseedsbanner.png');
     min-height: 220px;
     background-position: left;
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;
+}
+
+@media screen and (max-width: 600px) {
+    .bg-img {
+        background-image: url('../graphics/theappleseedsbanner-phone.png');
+        min-height: 220px;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size:cover;
+        position: relative;
+    }
 }
 
 /* - - - - - - - - - - - - - - - - - - - - NAV BAR - */
