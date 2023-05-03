@@ -25,7 +25,7 @@ body {
 @media screen and (max-width: 800px) {
     .bg-img {
         background-image: url('../graphics/theappleseedsbanner-phone.png');
-        min-height: 150px;
+        min-height: 120px;
         background-position: left;
         background-repeat: no-repeat;
         background-size:cover;
@@ -87,7 +87,7 @@ body {
 
 @media screen and (max-width: 800px) {
     .topnav a {
-        padding: 4px 6 px;
+        padding: 2px 2 px;
         font-size: 12px;
     }
 }
