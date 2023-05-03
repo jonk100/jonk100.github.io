@@ -96,8 +96,7 @@ $(document).ready(function () {
     });
 
     // ______________________________
-
-    // Get the active song from p2.js
+    /*    // Get the active song from p2.js
     var activeSong =  $('.active-song').attr('data-src'); // the function that gets the active song
 
     // Loop through all the tabs in the HTML
@@ -114,6 +113,6 @@ $(document).ready(function () {
         // Otherwise, remove the active class from the tab
         tab.classList.remove('active');
     }
-});
+    };*/
 
 });
