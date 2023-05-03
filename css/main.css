@@ -9,7 +9,7 @@
 body {
     background-image: url('https://www.theappleseeds.com/graphics/background.png');
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
 }
 
 /* Holds the BG image for the header navigation bar */
