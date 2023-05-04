@@ -14,6 +14,12 @@ body,html {
     height: 82%;
 }
 
+@media screen and (max-width: 600px) {
+    body,html {
+        height: 60%;
+    }
+}
+
 body {
     position:relative
 }
@@ -57,12 +63,21 @@ body {
 .player__album {
     width:130px;
     height:130px;
-    margin-right:40px;
+    margin-right:240px;
     position:relative;
     top:-65px;
     -webkit-transition:all 1s ease-in-out;
     -o-transition:all 1s ease-in-out;
     transition:all 1s ease-in-out
+}
+
+@media screen and (max-width: 600px) {
+    .player__album {
+        width:80px;
+        height:80px;
+        margin-right: 40px;
+        top: -40px;
+    }
 }
 
 /* hole in the album */

@@ -23,7 +23,7 @@ body {
     z-index: 0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .bg-img {
         background-image: url('../graphics/theappleseedsbanner-480.png');
         min-height: 100px;
