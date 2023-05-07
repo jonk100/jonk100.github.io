@@ -193,6 +193,7 @@ p {
 
 /* Style the tab content */
 .tabcontent {
+    background-image: url('../graphics/annie24.png');
     width:75%;
     text-align:left;
     margin:auto;

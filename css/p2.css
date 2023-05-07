@@ -284,13 +284,13 @@ body {
     margin-bottom:0px;
     margin-top:2px;
     color:#866b6b;
-    margin-right:5 %;
+    margin-right:5%;
 }
 
 .player__song {
     line-height:1;
-    margin: 2px;px;
-    font-size:12px;
+    margin: 2px;
+    font-size: 12px;
     font-weight: 600;
     color:#000000;
     text-align:right
