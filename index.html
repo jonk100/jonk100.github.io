@@ -33,25 +33,25 @@
 
   <div class="tab">
     <div>
-      <button class="tablinks" onclick="openSong(event, 'wannabe')">Wanna Be</button>
+      <button class="tablinks" data-src="https://www.theappleseeds.com/music/wannabe.mp3" onclick="openSong(event, 'wannabe')">Wanna Be</button>
     </div>
     <div>
-      <button class="tablinks" onclick="openSong(event, 'animalinside')">Animal Inside</button>
+      <button class="tablinks" data-src="https://www.theappleseeds.com/music/wannabe.mp3" onclick="openSong(event, 'animalinside')">Animal Inside</button>
     </div>
     <div>
-      <button class="tablinks" onclick="openSong(event, 'holywater')">Holy Water</button>
+      <button class="tablinks" data-src="https://www.theappleseeds.com/music/wannabe.mp3" onclick="openSong(event, 'holywater')">Holy Water</button>
     </div>
     <div>
-      <button class="tablinks"  onclick="openSong(event, 'thinkforyourself')">Think for Yourself</button>
+      <button class="tablinks"  data-src="https://www.theappleseeds.com/music/wannabe.mp3" onclick="openSong(event, 'thinkforyourself')">Think for Yourself</button>
     </div>
     <div>
-      <button class="tablinks" onclick="openSong(event, 'crashedmummy')">Crashed Mummy</button>
+      <button class="tablinks" data-src="https://www.theappleseeds.com/music/wannabe.mp3" onclick="openSong(event, 'crashedmummy')">Crashed Mummy</button>
     </div>
     <div>
-      <button class="tablinks" onclick="openSong(event, 'anotherhand')">Another Hand</button>
+      <button class="tablinks" data-src="https://www.theappleseeds.com/music/wannabe.mp3" onclick="openSong(event, 'anotherhand')">Another Hand</button>
     </div>
     <div>
-      <button style="border:none" class="tablinks" onclick="openSong(event, 'oldcountryman')">Old Country Man</button>
+      <button style="border:none" class="tablinks" data-src="https://www.theappleseeds.com/music/wannabe.mp3" onclick="openSong(event, 'oldcountryman')">Old Country Man</button>
     </div> 
   </div>
 
@@ -79,22 +79,22 @@
           <div class="player__controls">
             <div class="player__prev">
               <svg class="icon">
-                <use xlink:href="https://www.theappleseeds.com/graphics/p2/sprite.svg#arrow"></use>
+                <use xlink:href="https://www.theappleseeds.com/graphics/p2/sprite.svg #arrow"></use>
               </svg>
             </div>
             <div class="player__play">
               <svg class="icon play">
-                <use xlink:href="https://www.theappleseeds.com/graphics/p2/sprite.svg#play"></use>
+                <use xlink:href="https://www.theappleseeds.com/graphics/p2/sprite.svg #play"></use>
               </svg>
 
               <svg class="icon pause">
-                <use xlink:href="https://www.theappleseeds.com/graphics/p2/sprite.svg#pause"></use>
+                <use xlink:href="https://www.theappleseeds.com/graphics/p2/sprite.svg #pause"></use>
               </svg>
             </div>
 
             <div class="player__next">
               <svg class="icon">
-                <use xlink:href="https://www.theappleseeds.com/graphics/p2/sprite.svg#arrow"></use>
+                <use xlink:href="https://www.theappleseeds.com/graphics/p2/sprite.svg #arrow"></use>
               </svg>
             </div>
           </div>
@@ -121,7 +121,7 @@
 
 
     <!-- Tab content -->
-    <div id="wannabe" class="tabcontent" data-song="Wanna Be" >
+    <div id="wannabe" class="tabcontent" data-src="https://www.theappleseeds.com/music/wannabe.mp3" >
       <h3>Wanna Be</h3>
         <p>
           I know you, youre sitting there<br>
@@ -168,7 +168,7 @@
         </p>
     </div>
 
-    <div id="animalinside" data-song="Animal Inside" class="tabcontent">
+    <div id="animalinside" data-src="https://www.theappleseeds.com/music/animalinside.mp3" class="tabcontent">
       <h3>Animal Inside</h3>
       <p>
         (... now?)<br>
@@ -239,7 +239,7 @@
       </p>
     </div>
 
-    <div id="holywater" class="tabcontent" data-song="Holy Water" >
+    <div id="holywater" class="tabcontent" data-src="https://www.theappleseeds.com/music/holywater.mp3" >
       <h3>Holy Water</h3>
       <p>
         Why are you haunting me ghost?<br>
@@ -320,7 +320,7 @@
       </p>
     </div>
 
-    <div id="thinkforyourself" class="tabcontent" data-song="Think for Yourself">
+    <div id="thinkforyourself" class="tabcontent" data-src="https://www.theappleseeds.com/music/thinkforyourself.mp3">
       <h3>Think for Yourself</h3>
       <p>
         If a wise man said<br>
@@ -372,7 +372,7 @@
       </p>
     </div>
 
-    <div id="crashedmummy" class="tabcontent" data-song="Crashed Mummy">
+    <div id="crashedmummy" class="tabcontent" data-src="https://www.theappleseeds.com/music/crashedmummy">
       <div class="jtab">  %0/0.7/1.9/3.9/3.9/3.X/X[E] || %5/1.7/3.7/3.6/2.5/1.5/1[A] || %X/X.7/1.9/3.9/3.9/3.X/X[E] || %7/1.9/3.9/3.8/2.7/1.7/1[B] </div>
       <h3>Crashed Mummy</h3>
       <p>
@@ -492,7 +492,7 @@
       </p>
     </div>
 
-    <div id="anotherhand" class="tabcontent" data-song="Another Hand">
+    <div id="anotherhand" class="tabcontent" data-src="https://www.theappleseeds.com/music/anotherhand.mp3">
       <h3>Another Hand</h3>
       <p>
         I need another hand, he said,<br>
@@ -532,7 +532,7 @@
       </p>
     </div>
 
-    <div id="oldcountryman" class="tabcontent" data-song="Old Country Man">
+    <div id="oldcountryman" class="tabcontent" data-src="Old Country Man">
       <h3>Old Country Man</h3>
       <p>
         I came across a man,<br> 
