@@ -11,7 +11,7 @@
 
 /* position of player */
 body,html {
-    height: 90%;
+    height: 80%;
 }
 
 @media screen and (max-width: 600px) {
@@ -26,7 +26,7 @@ body {
 
 .player,.player__album:before,.player__play svg {
     position:absolute;
-    top:60%;
+    top:50%;
     left:50%;
     -webkit-transform:translate(-50%,-50%);
     -ms-transform:translate(-50%,-50%);
@@ -46,7 +46,7 @@ body {
 }
 
 .player.play, .player__album {
-    top: 60%;
+    top: 50%;
 }
 
 
@@ -131,9 +131,9 @@ body {
 }
 
 .player__bar {
-    background:#95a0d9;
+    background:#95a0d9ee;
     padding:30px 10px 30px 10px;
-    height:40px;
+    height:80px;
     -webkit-box-pack:justify;
     -webkit-justify-content:space-between;
     -ms-flex-pack:justify;
@@ -231,12 +231,12 @@ body {
 
 
 .player__timeline {
-    background:#46e088;
-    height:60px;
-    position:absolute;
-    bottom:10%;
+    background:#46e089a6;
+    height:40px;
+    position:inherit;
+    bottom:50%;
     left:30px;
-    right:5px;
+    right:30px;
     -webkit-transform:translateY(0);
     -ms-transform:translateY(0);
     transform:translateY(0);
