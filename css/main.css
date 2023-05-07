@@ -193,7 +193,7 @@ p {
 
 /* Style the tab content */
 .tabcontent {
-    background-image: url('../graphics/annie24.png');
+    background-image: url('../graphics/annie8.png');
     background-size:cover;
     background-repeat:no-repeat :
     width:75%;
@@ -201,9 +201,9 @@ p {
     margin:auto;
     display: none;
     padding: 24px 24px 24px 24px;
-    background-color: #95a0d960;
-    border: 2px solid #ffffff;
-    border-radius: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 0px;
     border-top: none;
 }
 
@@ -212,7 +212,7 @@ p {
 /* Other objects */
 
 img {
-    max-width:100%;
+    max-width:75%;
     height:auto;
 }
 
