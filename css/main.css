@@ -194,12 +194,14 @@ p {
 /* Style the tab content */
 .tabcontent {
     background-image: url('../graphics/annie24.png');
+    background-size:cover;
+    background-repeat:no-repeat :
     width:75%;
     text-align:left;
     margin:auto;
     display: none;
     padding: 24px 24px 24px 24px;
-    background-color: #95a0d9;
+    background-color: #95a0d960;
     border: 2px solid #ffffff;
     border-radius: 20px;
     border-top: none;
