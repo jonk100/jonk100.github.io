@@ -195,13 +195,12 @@ p {
 .tabcontent {
     background-image: url('../graphics/annie8.png');
     background-size:cover;
-    background-repeat:no-repeat :
+    background-repeat:no-repeat:
     width:75%;
     text-align:left;
     margin:auto;
     display: none;
     padding: 24px 24px 24px 24px;
-    background-color: #ffffff;
     border: 1px solid #ffffff;
     border-radius: 0px;
     border-top: none;

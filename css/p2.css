@@ -133,7 +133,7 @@ body {
 .player__bar {
     background-image: url('../graphics/player3.png');
     background-size:cover;
-    background-repeat:no-repeat :
+    background-repeat:no-repeat;
     padding:30px 10px 30px 10px;
     height:80px;
     -webkit-box-pack:justify;
