@@ -131,7 +131,7 @@ body {
 }
 
 .player__bar {
-    background-image: url('../graphics/player3.png');
+    background-image: url('../graphics/player4.png');
     background-size:cover;
     background-repeat:no-repeat;
     padding:30px 10px 30px 10px;
@@ -140,7 +140,6 @@ body {
     -webkit-justify-content:space-between;
     -ms-flex-pack:justify;
     justify-content:space-between;
-    border:solid 2px #00ff55a1;
     -webkit-border-radius:15px;
     border-radius:15px;
     -webkit-box-shadow:0 30px 56px 6px rgba(0,0,0,.1);
@@ -167,8 +166,8 @@ body {
   -o-transition:all .2s ease-in-out;
   transition:all .2s ease-in-out;
   margin-right:10px;
-  border: solid 1px #ff6767; 
-  background:#af59ff2f
+  border: solid 1px #48ff00; 
+  background:#9b85b1e5
 }
 
 .player__prev {
@@ -189,7 +188,7 @@ body {
 }
 
 .player__next:hover svg,.player__play:hover svg,.player__prev:hover svg {
-    fill:#48ff00
+    fill:#41dd03
 }
 
 .player__play {
@@ -234,8 +233,7 @@ body {
 
 
 .player__timeline {
-    background-image: url('../graphics/player3.png');
-    background-size:cover;
+
     background:#46e088;
     height:60px;
     position:inherit;
