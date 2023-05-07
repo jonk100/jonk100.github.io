@@ -10,7 +10,7 @@
   <title>theAppleseeds</title>
 </head>
 <body>
-    
+<header>
   <!-- Banner Image and Navbar-->
   <div class="bg-img">
     <div class="container2">
@@ -23,7 +23,31 @@
       </div>
     </div> 
   </div>
+</header>
 
+  <div class="tab">
+    <div>
+      <button class="tablinks" onclick="openSong(event, 'wannabe')">Wanna Be</button>
+    </div>
+    <div>
+      <button class="tablinks" onclick="openSong(event, 'animalinside')">Animal Inside</button>
+    </div>
+    <div>
+      <button class="tablinks" onclick="openSong(event, 'holywater')">Holy Water</button>
+    </div>
+    <div>
+      <button class="tablinks"  onclick="openSong(event, 'thinkforyourself')">Think for Yourself</button>
+    </div>
+    <div>
+      <button class="tablinks" onclick="openSong(event, 'crashedmummy')">Crashed Mummy</button>
+    </div>
+    <div>
+      <button class="tablinks" onclick="openSong(event, 'anotherhand')">Another Hand</button>
+    </div>
+    <div>
+      <button style="border:none" class="tablinks" onclick="openSong(event, 'oldcountryman')">Old Country Man</button>
+    </div> 
+  </div>
   <br>
   <br>
   <br>
@@ -33,6 +57,7 @@
   <!-- SWEET AUDIO PLAYER  -->
   <link rel="stylesheet" href="/css/p2.css">
   <div class="row">
+
     <div class="contain">
       <div class="player">
         <div class="player__bar">
@@ -50,13 +75,11 @@
 
           <!-- PLAYER CONTROLS -->
           <div class="player__controls">
-
             <div class="player__prev">
               <svg class="icon">
                 <use xlink:href="https://www.theappleseeds.com/graphics/p2/sprite.svg#arrow"></use>
               </svg>
             </div>
-
             <div class="player__play">
               <svg class="icon play">
                 <use xlink:href="https://www.theappleseeds.com/graphics/p2/sprite.svg#play"></use>
@@ -92,29 +115,7 @@
   <!-- <link rel="stylesheet" href="/css/tabs.css"> -->
  <!-- Tab links -->
  <div>
-  <div class="tab">
-    <div>
-      <button class="tablinks" onclick="openSong(event, 'wannabe')">Wanna Be</button>
-    </div>
-    <div>
-      <button class="tablinks" onclick="openSong(event, 'animalinside')">Animal Inside</button>
-    </div>
-    <div>
-      <button class="tablinks" onclick="openSong(event, 'holywater')">Holy Water</button>
-    </div>
-    <div>
-      <button class="tablinks"  onclick="openSong(event, 'thinkforyourself')">Think for Yourself</button>
-    </div>
-    <div>
-      <button class="tablinks" onclick="openSong(event, 'crashedmummy')">Crashed Mummy</button>
-    </div>
-    <div>
-      <button class="tablinks" onclick="openSong(event, 'anotherhand')">Another Hand</button>
-    </div>
-    <div>
-      <button style="border:none" class="tablinks" onclick="openSong(event, 'oldcountryman')">Old Country Man</button>
-    </div> 
-  </div>
+ 
 
 
     <!-- Tab content -->
