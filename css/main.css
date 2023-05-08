@@ -7,7 +7,7 @@
 
 /* background image (body) */
 body {
-    background-image: url('..graphics/background.png');
+    background-image: url('../graphics/background.png');
     background-size: cover;
     background-position: top;
 }
@@ -135,7 +135,7 @@ h6 {
 p {
     text-align:middle;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:large
+    font-size:14px;
 }
 
 

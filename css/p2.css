@@ -134,16 +134,16 @@ body {
     background-image: url('../graphics/player4.png');
     background-size:cover;
     background-repeat:no-repeat;
-    padding:30px 10px 30px 10px;
-    height:80px;
+    padding:20px 0px 20px 0px;
+    height:74px;
     -webkit-box-pack:justify;
     -webkit-justify-content:space-between;
     -ms-flex-pack:justify;
     justify-content:space-between;
     -webkit-border-radius:15px;
     border-radius:15px;
-    -webkit-box-shadow:0 30px 56px 6px rgba(0,0,0,.1);
-    box-shadow:0 30px 56px 6px rgba(80, 0, 146, 0.253);
+    -webkit-box-shadow:0 30px 10px -10px rgba(0,0,0,.1);
+    box-shadow:-10px 15px 10px -10px rgba(0, 0, 0, 0.253);
     position:relative;
     z-index:3;
     top:0px;
@@ -165,9 +165,9 @@ body {
   -webkit-transition:all .2s ease-in-out;
   -o-transition:all .2s ease-in-out;
   transition:all .2s ease-in-out;
-  margin-right:10px;
-  border: solid 1px #48ff00; 
-  background:#9b85b1e5
+  margin-right:6px;
+  border: solid 1px #73eebd52; 
+  background:#323b34
 }
 
 .player__prev {
@@ -184,7 +184,7 @@ body {
 }
 
 .player__next:hover,.player__play:hover,.player__prev:hover {
-    background:hsl(285, 6%, 14%)
+    background:hsl(0, 0%, 0%)
 }
 
 .player__next:hover svg,.player__play:hover svg,.player__prev:hover svg {
@@ -234,12 +234,12 @@ body {
 
 .player__timeline {
 
-    background:#46e088;
+    background:#4edc9775;
     height:60px;
     position:inherit;
     bottom:10%;
-    left:100px;
-    right:10px;
+    left:115px;
+    right:90px;
     -webkit-transform:translateY(0);
     -ms-transform:translateY(0);
     transform:translateY(0);
@@ -253,7 +253,7 @@ body {
     -webkit-flex-direction:column;
     -ms-flex-direction:column;
     flex-direction:column;
-    /*border: solid 1px #000000;*/ 
+    border: solid 1px #4edc97; 
 }
 
 .player #playhead,.player__timeline,.player__timelineBar {
@@ -262,31 +262,31 @@ body {
 }
 
 .player__timelineBar {
-    background:#92e9ff;
+    background:#1f392d;
     margin-top:0px;
     margin-bottom:20px;
-    margin-left: 50px;
-    width: 70%;
+    margin-left: 20px;
+    width: 80%;
     height: 8px;
     position:relative
 }
 
 .player #playhead {
     position:absolute;
-    top:2px;
+    top:1px;
     left:0;
     width:4px;
     height:60%;
-    background:#ffffff
+    background:#c9ffdf
 }
 
 .player__author {
-    font-size:14px;
+    font-size:12px;
     line-height:1em;
-    font-weight:700;
+    font-weight:200;
     margin-bottom:0px;
     margin-top:2px;
-    color:#866b6b;
+    color:#22392e;
     margin-right:5%;
 }
 
@@ -294,7 +294,7 @@ body {
     line-height:1em;
     margin: 2px 10px 4px 10px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 400;
     color:#000000;
     text-align:right
 }
