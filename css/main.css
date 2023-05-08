@@ -275,3 +275,17 @@ a:link {
     display: table;
     clear: both;
 }
+
+
+
+/* - -- - - - - - - - -- -- -- - - - - -- -- -J TAB - J TAB - JTAB 
+*/
+.jtab {
+    height:218px;
+  }
+  .jtab.chordonly {
+    height:118px;
+  }
+  .jtab.tabonly {
+    height:100px;
+  }
