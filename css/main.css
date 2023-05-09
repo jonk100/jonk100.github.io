@@ -260,7 +260,7 @@ a:link {
 /* - - - - - - - - - - - - - - - - - - - - DEPRECATED - - - */
 
 
-/* Create three equal columns that float next to each other */
+/* Create three equal columns that float next to each other 
 .column {
     float: left;
     margin-left: 3%;
@@ -268,14 +268,14 @@ a:link {
     max-width:100%;
     height:auto;
 }
-
-/* Clear floats after the columns */
+*/
+/* Clear floats after the columns 
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-
+*/
 
 
 /* - -- - - - - - - - -- -- -- - - - - -- -- -J TAB - J TAB - JTAB 
