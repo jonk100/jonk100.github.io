@@ -1,6 +1,6 @@
 ---
-chords:
-  E:
+## chords
+##   E
     - o7 b1,5,7 n2,9 n3,9 m6
 ---
 
@@ -30,11 +30,11 @@ l1: But he's been on a bad streak of luck since then,
 c1:                E
 l1: I'll try to remember,
 
-c1:
-l1:
+## c1
+## l1
 
-c1:
-l1:
+## c1
+## l1
 
 
 # crashedmummy
