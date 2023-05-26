@@ -20,6 +20,13 @@ function openSong(evt, songName) {
 }
 
 
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+
+
+
   /*
     // Get the active song from p2.js
  function activeSong() {
