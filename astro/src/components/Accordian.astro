@@ -1,0 +1,136 @@
+---
+import Almostthere from './songs/Almostthere.astro';
+import Animalinside from './songs/Animalinside.astro';
+import Anotherhand from './songs/Anotherhand.astro';
+import Crashedmummy from './songs/Crashedmummy.astro';
+import Holywater from './songs/Holywater.astro';
+import Oldcountryman from './songs/Oldcountryman.astro';
+import Thinkforyourself from './songs/Thinkforyourself.astro';
+import Wannabe from './songs/Wannabe.astro';
+
+interface Props {
+  
+}
+
+---
+<div>
+  <button class="accordion">Wanna Be</button>
+    <div class="panel">
+      <Wannabe />
+    </div>
+
+  <button class="accordion">Animal Inside</button>
+    <div class="panel">
+      <Animalinside />
+    </div>
+
+  <button class="accordion">Holy Water</button>
+    <div class="panel">
+      <Holywater />
+    </div>
+
+  <button class="accordion">Think for Yourself</button>
+    <div class="panel">
+      <Thinkforyourself />
+    </div>
+
+  <button class="accordion">Crashed Mummy</button>
+    <div class="panel">
+      <Crashedmummy />
+    </div>
+
+  <button class="accordion">Another Hand</button>
+    <div class="panel">
+      <Anotherhand />
+    </div>
+
+  <button class="accordion">Old Country Man
+  </button>
+    <div class="panel">
+      <Oldcountryman />
+    </div>
+
+  <button class="accordion">Almost There</button>
+    <div class="panel">
+      <Almostthere />
+    </div>
+</div>
+
+<style>
+
+p,h2,h3,h4 {
+  margin: auto;
+  text-align: center;
+}
+
+.footer {
+  margin: auto;
+  text-align: center;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  display: block;
+  background-color: #13e18196;
+  color: #444;
+  margin: auto;
+  width: 60%;
+  cursor: pointer;
+  padding: 18px;
+  text-align: center;
+  border: 1px solid #63917b2f;
+  border-bottom:none;
+  border-radius: 20px;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active {
+  border-bottom:none;
+  background-color: #13e1813b;
+  border-radius: 20px 20px 0px 0px ;
+
+}
+
+.accordion:hover {
+  border-bottom:none;
+  background-color: #13e18125;
+  border-radius: 20px 20px 0px 0px ;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  margin: auto;
+  width: 60%;
+  padding: 0 18px;
+  background-color: #a49fc950;
+  text-align: center;
+  border-radius: 0px 0px 20px 20px ;
+  display: none;
+  overflow: hidden;
+}
+
+</style>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+</script>

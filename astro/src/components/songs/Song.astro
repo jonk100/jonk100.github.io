@@ -1,0 +1,19 @@
+---
+interface Props {
+  name: string;
+  shortName: string;
+  mp3: string;
+  url: string;
+}
+
+const { shortName, name, mp3, url } = Astro.props
+---
+
+<br>
+<h4>
+  <a href={ url } download={ shortName } class={ name }>
+  { name } - DOWNLOAD MP3
+  </a>
+  <br>
+</h4>
+<br>
