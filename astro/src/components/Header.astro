@@ -1,0 +1,114 @@
+---
+import Bannerimg from '/banner-full.png' ;
+
+---
+
+<header>
+  <div class="bg-img"
+    <div class="contain">
+      <div class="topnav">
+        <a href="/music">Songs</a>
+        <a href="/tabs">Tabs</a>
+        <a href="/pics">Gallery</a>
+        <a href="/contact">Contact</a>        
+        <a href="/about">About</a>
+        <a href="/">Home</a>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<style>
+
+.bg-img {
+    background-image: url('/banner-full.png');
+
+    background-position:left;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: 0% 10% 0% 10%;
+    position: relative;
+    min-height: 150px;
+    z-index: 3;
+}
+
+@media screen and (max-width: 600px) {
+    .bg-img {
+        background-image: url('/banner-phone.png');
+        min-height: 100px;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size:cover;
+        position: relative;
+    }
+}
+
+
+/* Holds the navbar */
+.contain {
+    background-color:#ccb1ff00;
+    width: 100%;
+    height: 150px;
+    position:absolute;
+
+}
+
+@media screen and (max-width: 800px) {
+    .contain {
+        height: 50px;
+    }
+
+}
+
+/* Holds the navbar */
+.container {
+    position: ;
+    right: 0px;
+    margin: 0px;
+    width: 70%;
+    z-index: 2;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        margin: 4px;
+    }
+}
+
+/* Navbar */
+.topnav {
+    overflow: hidden;
+    background: #a5b6d5;
+    background: linear-gradient(90deg, #c1ffdd36 2%, #9bb1ca59 90%, #a49fc9 100%);
+    height: 150px ;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+
+}
+/*@media screen and (max-width: 800px) {
+    .container {}
+}*/
+
+.topnav a {
+    float: right;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+    .topnav a {
+        padding: 4px 4px 4px 4px;
+        font-size: 13px;
+    }
+}
+
+.topnav a:hover {
+    background-color: #bfffdf;
+    color: #000000;
+
+</style>
