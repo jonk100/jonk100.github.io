@@ -97,13 +97,17 @@ a:link {
 
 /* Holds the BG image */
 .bg-img {
-    background-image: url('/graphics/banner.png');
-    min-height: 150px;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  background-image: url('/banner-full.png');
+
+  background-position:left;
+  background-repeat: no-repeat;
+  background-size:cover;
+  margin: 0% 10% 0% 10%;
+  position: relative;
+  min-height: 150px;
+  z-index: 3;
 }
+
 
 /* Holds the navbar */
 .container {
