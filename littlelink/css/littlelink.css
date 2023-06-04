@@ -42,9 +42,9 @@ html {
 
 body {
   background-image: var(--background-image);
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 300;
   font-family: 'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif;
   color: var(--font-color)
 }
@@ -52,7 +52,8 @@ body {
 h1 {
   margin-top: 0;
   margin-bottom: 16px;
-  font-weight: 800
+  font-weight: 800;
+  color: #13e182;
 }
 
 h1 {
@@ -136,11 +137,13 @@ hr {
 
 .avatar {
   vertical-align: middle;
-  width: 156px;
-  height: 156px;
+  width: 172px;
+  height: 172px;
   border-radius: 50%;
-  border:2px solid #3da23b88
-  filter: invert(100%);
+  border:1.5px solid #00ff00ad;
+  filter: saturate(180%);
+  filter:contrast(100%);
+  filter:opacity(80%);
 }
 
 .footer {
