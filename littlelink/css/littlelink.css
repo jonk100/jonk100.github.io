@@ -45,7 +45,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
-  font-family: "Open Sans",HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif;
   color: var(--font-color)
 }
 
@@ -136,9 +136,10 @@ hr {
 
 .avatar {
   vertical-align: middle;
-  width: 128px;
-  height: 128px;
-  border-radius: 50%
+  width: 156px;
+  height: 156px;
+  border-radius: 50%;
+  border:1px solid #95a0d981
 }
 
 .footer {
