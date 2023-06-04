@@ -42,7 +42,7 @@ html {
 
 body {
   background-image: var(--background-image);
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   font-family: 'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif;
@@ -139,7 +139,8 @@ hr {
   width: 156px;
   height: 156px;
   border-radius: 50%;
-  border:1px solid #95a0d981
+  border:2px solid #3da23b88
+  filter: invert(100%);
 }
 
 .footer {
