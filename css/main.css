@@ -26,7 +26,8 @@ body {
 @media screen and (max-width: 600px) {
   .bg-img {
     background-image: url('/banner-phone.png');
-    min-height: 100px;
+    min-height: 80px;
+    margin: 0 0 0 0;
     background-position: left;
     background-repeat: no-repeat;
     background-size:cover;
