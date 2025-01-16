@@ -1,8 +1,0 @@
-
-/* main background image (body) */
-
-body {
-  background-image: url('/background.png');
-  background-size:contain;
-  background-position: top;
-}
